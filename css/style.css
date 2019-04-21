@@ -1,0 +1,608 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #f7f7f7;
+	font-size: 1em;
+	font-family: "Segoe UI", sans-serif;
+	line-height: 135%;
+}
+
+a {
+	color: #f58b8b;
+	text-decoration: none;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+}
+
+a:hover {
+	color: #8b9ff5;
+	text-decoration: none;
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+}
+
+a:active {color: #8ce4a6;}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+hr {
+	display: block;
+	border: 0;
+	height: 1px;
+	border-top: 1px solid #ccc;
+	padding:0;
+}
+
+.left {float: ledt;}
+.right {float: right;}
+.clear {clear: both;}
+
+/* Selection Block */
+
+::selection {background-color: #f58b8b; color: #fff;}
+::-moz-selection {background-color: #f58b8b; color: #fff;}
+
+header, footer {
+	width: 98%;
+	background-color: #fff;
+	float: left;
+}
+
+header {
+	border-bottom: 2px solid silver;
+	padding: 1%;
+    background: url("../img/Math.jpeg") repeat-x center 0;
+    height: 100px;
+}    
+
+header #logo {
+    text-align: center;
+}
+
+header script {
+    align-items: center;
+}
+
+#logo {
+	font-size: 2em;
+	font-family: Comic Sans MS, sans-serif;
+	color: white;
+    text-align: center;
+    background-image: image("img/Math.jpeg");
+}
+
+.contact {
+	font-size: 1.5em;
+	font-family: Comic Sans MS, sans-serif;
+	margin-left: 20px;
+}
+
+input[type=text].field {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-left: 20px;
+	outline: none;
+}
+
+input[type=text].field:focus {border: 2px solid #f58b8b}
+
+#menu {
+	color: #666;
+	font-family: Comic Sans Ms, sans-serif;
+	font-size: 1.7em;
+	margin-top: 10px;
+}
+
+#menu hr {
+	width: 500px;	
+    width: 100%;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#menuHrefs a{
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+	color:#626262;
+}
+
+#menuHrefs a:hover{
+	background: #ececec;
+}
+
+/* Основні стилі для сайта */
+
+#wrapper {
+/*	float: left;*/
+/*    align-items: center;*/
+	width: 100%;
+	margin-top: 20px;
+}
+
+#wrapper #articles {
+/*	float: left;*/
+    display: flex;
+    align-items: center;
+	width: 80%;
+	margin-left: 10%; 
+}
+
+/*#wrapper #articles article {*/
+/*	float: left;*/
+/*
+    display: flex;
+    align-items: center;
+*/
+/*
+	border: 1px solid silver;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: #fafafa;
+	min-height: 400px; 	
+}
+*/
+
+@media(min-width: 900px){
+#wrapper #articles article{	
+	width: 31.333%;	
+	margin-right: 2%;	
+}}
+
+@media(max-width: 899) and (min-width: 700px){
+#wrapper #articles article{	
+	width: 80%;	
+	margin-right: 10%;
+	margin-bottom: 10px;
+}}
+
+@media(max-width: 699px){
+#wrapper #articles article{	
+	width: 100;
+	margin-bottom: 10px;
+}}
+
+#wrapper #articles article img {
+	width: 100%;
+	height: 200px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 1px solid silver;
+	margin-bottom: 10px;
+}
+
+#wrapper #articles article h2 {
+	width: 90%;
+	margin-left: 5%;
+	font-weight: normal;
+	font-size: 1.7em;
+	color: #4a4a4a;
+}
+
+#wrapper #articles article p {
+	width: 90%;
+	margin-left: 10%; 
+	text-indent: 1em;
+}
+
+#wrapper #articles article a {
+	padding: 5px;
+	background: #ed7b7b;
+	margin-left: 5%;
+	border-radius: 50px;
+	color: #fff;
+	float:left;
+}
+
+#wrapper #articles article a:hover {
+	background: #7feb6d;
+}
+
+/*  Стилі для сторінки "Про нас" */
+
+#about_us {
+	width: 60%;
+	float: left;
+	background: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+#colunRight {
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	background: #fafafa;
+	border-radius: 5px;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+/* Стилі для форми */
+
+form {
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+}
+
+form label {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+form input {
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	outline: none;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	width: 40%;
+	background: #fafafa;
+}
+
+form input:focus, form textarea:focus {border: 2px solid #f58b8b}
+
+form textarea {
+	float: left;
+	clear: both;
+	width: 60%;
+	background: #fafafa;
+	border: 2px solid silver;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.7em;
+}
+
+form #send {
+	float: left;
+	padding: 10px;
+	background: #f37a7a;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 2em;
+	color: #fff;
+	cursor: pointer;
+}
+
+form #send:hover {
+	background: #bdf37a;
+}
+
+/* Центальний блок сайту */
+
+#main_soc_block {
+	width: 100%;
+	padding: 2% 0;
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin: 20px 0;	
+	float: left;
+	background: url("../img/background.jpg") repeat-x center 0;
+	height: 200px;
+}
+
+#main_soc_block_in {
+	text-align: center;
+	padding: 1%;
+	height: 200px;
+	background: #fafafa;
+	border: 1px solid silver;
+	border-radius: 7px;
+	width: 500px;
+	max-width: 98%;
+	box-sizing: border-box;
+}
+
+#main_soc_block_in a {
+	float: left;
+	padding: 5px 10px;
+	background: #e9af32;
+	border-radius: 6px;
+	color: #fff;
+	margin-left: 40%;
+	margin-top: 10px;	
+}
+
+/* Стилі для footer */
+
+footer {
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	padding: 1%;
+}
+
+footer img {width: 15%; float: left; margin-right: 5px;}
+
+#page-wrap {
+	content: "";
+	display: block;
+}
+
+footer, #page-wrap {height: 10px;}
+
+#page-wrap {
+	min-height: 93%;
+	margin-bottom: -10px;
+	position: relative;
+}
+
+.class {
+    padding-bottom: 10px;
+}
+
+#articel1 {
+    height: 1000px;
+    width: 200px;
+    float: left;
+    background: red;
+}
+
+
+#articel2 {
+    height: 100px;
+    width: 850px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: blue;
+}
+
+#articel3 {
+    height: 1000px;
+    width: 200px;
+    float: right;
+    background: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Починається код тут*/
+body {
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 430px;
+  margin: 0 auto;
+  box-shadow: 0 0 2px #cccccc;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  margin-bottom: 10px;
+  color: white;
+  background-color: #34495e;
+}
+
+.header .layout-column {
+  min-height: 50px;
+  background-color: rgba(192, 57, 43, 0.9);
+  border-bottom: 2px dashed #95a5a6;
+}
+
+.header .layout-column-1 {
+  float: left;
+  width: 280px;
+}
+
+.header .layout-column-2 {
+  float: right;
+  width: 130px;
+}
+
+.features {
+  margin-bottom: 10px;
+}
+
+.features .layout-column {
+  float: left;
+  width: 130px;
+  min-height: 100px;
+  margin-right: 20px;
+  background-color: rgba(236, 240, 241, 0.9);
+  border-bottom: 2px dashed #95a5a6;
+}
+
+.features .layout-column:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  min-height: 50px;
+  color: white;
+  background-color: #34495e;
+}
+
+/* Стили содержания */
+.hidden {
+  display: block;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.menu {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #2c3e50;
+  border-radius: 5px;
+}
+
+.feature {
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-logo {
+  padding: 10px;
+}
+
+
+
+
+article, aside {
+    background-color: #fafafa;
+    height: auto;
+    border-radius: 5px;
+    border:  1px solid silver;
+    box-sizing: border-box;
+    margin-top: 20px;
+    float: left;
+}
+
+article {    
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+article #example {
+    margin: 10px 20px;
+}
+
+article #example input {
+    margin-top: 10px;
+    margin: 10px;
+    width: 75px;
+    height: 50px;
+    background-color: cyan;
+}
+
+article #example input:hover {
+    margin-top: 10px;
+    margin: 10px;
+    width: 75px;
+    height: 50px;
+    background: green;
+}
+
+article #example .text {
+    margin-top: 10px;    
+    margin: 10px;
+    width: 75px;
+    height: 15px;
+    background: white;
+}
+
+#mem {
+    background: url("../img/MathMem.jpg") center 0;
+    min-height: 420px;
+}
+
+aside {    
+    width: 15%;
+    height: 100%;
+}
+
+aside p {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+aside a{
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+    background: #ed7b7b;
+	color:#626262;
+}
+
+aside a:hover {
+	background: #7feb6d;
+}
+
+aside .blurb {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 70%;
+    border: 2px solid silver;
+    border-radius: 5px;
+/*    align-items: center;*/
+    text-align: center;
+}
+
+.marquee{
+width:100%;
+white-space:nowrap;
+overflow:hidden;
+}
+ 
+.marquee span {
+color:#212121;
+font-size:25px;
+display:inline-block;
+padding-left:100%;
+-webkit-animation: marquee 10s infinite linear;
+animation: marquee 10s infinite linear;
+}
+ 
+@-webkit-keyframes marquee {
+0%{-webkit-transform: translate(0, 0);}
+100%{-webkit-transform: translate(-100%, 0);}
+}
+@keyframes marquee{
+0%{transform: translate(0, 0);}
+100%{transform: translate(-100%, 0)}
+}
